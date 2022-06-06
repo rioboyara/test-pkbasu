@@ -1,0 +1,8 @@
+-- Заполняем таблицу
+INSERT INTO struct (id, parentId, name)
+	VALUES ('1','1353','Ivan'),
+    	   ('2','5345','Bob'),
+           ('3','7363','Pop');
+-- Функция вывода полного наименования
+SELECT *, CONCAT_WS('.', parentId, name) as concat_ws FROM struct
+
